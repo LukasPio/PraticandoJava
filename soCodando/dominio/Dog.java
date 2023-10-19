@@ -1,21 +1,26 @@
-package praticando.soCodando;
+package praticando.soCodando.dominio;
 
 public class Dog {
-    protected String nome;
+    protected String name;
     protected String raca;
     protected People dono;
 
-    public Dog(String nome, String raca) {
-        this.nome = nome;
+    public Dog(String name, String raca, People dono) {
+        this.name = name;
         this.raca = raca;
+        this.dono = dono;
+    }
+
+    public void bark() {
+        System.out.println(this.name + ": " + "Au Au");
     }
 
     public String getNome() {
-        return nome;
+        return name;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        this.name = nome;
     }
 
     public String getRaca() {

@@ -1,14 +1,19 @@
-package praticando.soCodando;
+package praticando.soCodando.dominio;
+
+import praticando.soCodando.dominio.Dog;
 
 public class People {
     protected String name;
     protected int age;
     protected Dog dog;
 
-    public People(String name, int age, Dog dog) {
+    public People(String name, int age) {
         this.name = name;
         this.age = age;
-        this.dog = dog;
+    }
+
+    public void toCall () {
+        System.out.println(this.name + ": Come on sir " + this.dog.getNome());
     }
 
     public String getName() {
